@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> Hola {{name}} {{surname}}, esta es nuestra primer plantilla! </p>
+
+   
+   {% for n in notas%}
+       {% if n < 6 %}
+
+          <p style="color:  green"> NOTA MALA {{n}} </p>
+          <br>
+       {%else%}
+          <p style="color: blue"> NOTA BUENA {{n}} </p>
+          <br>
+       {% endif %}
+    
+   {% endfor %}
+  
+
+</body>
+</html>
